@@ -1,0 +1,19 @@
+{
+  "slug": "new-guide",
+  "title": "新指南的清楚標題",
+  "category": "上市宣傳",
+  "summary": "說明本篇指南能解決的拍攝需求。",
+  "audience": "描述店主與觀看者。",
+  "materials": ["素材一", "素材二", "素材三"],
+  "shots": [
+    {"seconds": 2, "visual": "開場畫面。", "caption": "開場字幕"},
+    {"seconds": 3, "visual": "展示畫面。", "caption": "展示字幕"},
+    {"seconds": 4, "visual": "細節畫面。", "caption": "細節字幕"},
+    {"seconds": 3, "visual": "使用畫面。", "caption": "使用字幕"},
+    {"seconds": 3, "visual": "收尾畫面。", "caption": "收尾字幕"}
+  ],
+  "checks": ["素材與事實資訊已核對。", "總時間為 15 秒。", "字幕可清楚閱讀。", "店名與行動邀請已確認。"],
+  "related": ["product-reveal", "daily-scenario"],
+  "updated": "2026-11-14",
+  "provenance": "原創示例，AI 協作撰寫。請說明虛構情境與正式使用前需要核對的資料。"
+}

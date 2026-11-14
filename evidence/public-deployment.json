@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-14",
+  "url": "https://p16157038-max.github.io/clippilot-guide-hw9/",
+  "anonymous_http_checks": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "matches_local_after_newline_normalization": true,
+      "normalized_sha256": "ff3492bcdcde7985544988c3b1a44e74c317311216d55894234a5ca878acb2cc"
+    },
+    {
+      "path": "guides/drink-launch/index.html",
+      "status": 200,
+      "matches_local_after_newline_normalization": true,
+      "normalized_sha256": "f07cc9b64e08cbdbe1df2964f5af8cc7d6eff745c6fd7f5efc0dc21aefc6e479"
+    },
+    {
+      "path": "guides/product-reveal/index.html",
+      "status": 200,
+      "matches_local_after_newline_normalization": true,
+      "normalized_sha256": "ac363d30eaf5884909166bda5f46d243f14e64fe9079d3375198116ed089ae3b"
+    },
+    {
+      "path": "guides/daily-scenario/index.html",
+      "status": 200,
+      "matches_local_after_newline_normalization": true,
+      "normalized_sha256": "c9ec5df4ec723b825b8cdf8bb0d29b1a165e9768c4e19faecf4cdc7ba4ea751c"
+    },
+    {
+      "path": "guides/feature-comparison/index.html",
+      "status": 200,
+      "matches_local_after_newline_normalization": true,
+      "normalized_sha256": "677139d0e8be1caea3755a493bec2da48a332f4d36fe2d33f282dafb9a86af0f"
+    },
+    {
+      "path": "maintenance/index.html",
+      "status": 200,
+      "matches_local_after_newline_normalization": true,
+      "normalized_sha256": "2a88a730eb2207f332bc9aa4acf76f287aa7ed3cb03703078308746ea5c5218f"
+    },
+    {
+      "path": "AGENTS.md",
+      "status": 200,
+      "matches_local_after_newline_normalization": true,
+      "normalized_sha256": "9702a23102c24b27242eb09464f5eb11ecc4864122e9019e5dd1b82f063e63ea"
+    },
+    {
+      "path": "assets/site.css",
+      "status": 200,
+      "matches_local_after_newline_normalization": true,
+      "normalized_sha256": "1991b5658f765371be0b9984e899e52f892c0c6e4e5cb5ab28e10f5788cb27b7"
+    },
+    {
+      "path": "assets/site.js",
+      "status": 200,
+      "matches_local_after_newline_normalization": true,
+      "normalized_sha256": "8403f7360265917ca80bf4734ff6978d969538d25833f566769c493ebf6ca683"
+    }
+  ],
+  "note": "HTTP checks only; not a browser interaction test. CRLF/LF differences normalized to match Git line-ending handling."
+}

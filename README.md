@@ -4,6 +4,12 @@
 
 這是給小店店主的商品短影片指南網站。每篇有素材清單、15 秒五格分鏡、字幕與交付檢查。網站以繁體中文提供可閱讀、可搜尋、可複製摘要的教學內容，不需要 API key。
 
+線上網站：https://p16157038-max.github.io/clippilot-guide-hw9/
+
+GitHub 原始碼：https://github.com/p16157038-max/clippilot-guide-hw9
+
+專案規則：https://github.com/p16157038-max/clippilot-guide-hw9/blob/main/AGENTS.md
+
 ## 閱讀與維護
 
 AI 接手前先讀根目錄 `AGENTS.md`。正式內容來自 `content/*.json`；`tools/build.py` 負責驗證並產生首頁、指南頁與維護說明頁。新增一篇符合規則的來源檔後重建，即可自動加入首頁與分類，不需逐頁改版型。

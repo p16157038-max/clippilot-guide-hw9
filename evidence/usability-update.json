@@ -1,0 +1,41 @@
+{
+  "version": "1.1",
+  "date": "2026-11-15",
+  "status": "local_checks_passed",
+  "user_feedback": "使用者指出用途、開始位置及取得成果不清楚，要求簡單、實用、完整的操作流程。",
+  "historical_extension": {
+    "date": "2026-11-14",
+    "baseline_commit": "9576bbe8b05fb8052bf2300592b93c4d8bed1e4c",
+    "extension_commit": "250eff6c0fa9c4f128e13f7a5d15a93f909f5e89",
+    "note": "舊擴充的八個檔案雜湊屬當時版本，當前介面改版會修改共用程式。"
+  },
+  "current_static_checks": {
+    "build": {
+      "exit_code": 0,
+      "stdout": "PASS: 4 source guides validated; 6 HTML pages built; all storyboards total 15 seconds.\n",
+      "stderr": ""
+    },
+    "site_check": {
+      "exit_code": 0,
+      "stdout": "PASS: 6 pages; 4 source/output pairs; 73 local targets; zh-Hant; one H1 per page; no duplicate IDs; worksheet forms/data/5 shots/limits/actions/scripts; three-step purpose home. Static HTML checks only, not browser interaction tests.\n",
+      "stderr": ""
+    },
+    "schema_tests": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_caption_length_boundary (__main__.ContentRulesTests.test_caption_length_boundary) ... ok\ntest_category_provenance_and_count_constraints (__main__.ContentRulesTests.test_category_provenance_and_count_constraints) ... ok\ntest_duplicate_slug_rejected (__main__.ContentRulesTests.test_duplicate_slug_rejected) ... ok\ntest_duration_must_total_fifteen (__main__.ContentRulesTests.test_duration_must_total_fifteen) ... ok\ntest_each_shot_requires_positive_integer_duration (__main__.ContentRulesTests.test_each_shot_requires_positive_integer_duration) ... ok\ntest_empty_caption_and_visual_rejected (__main__.ContentRulesTests.test_empty_caption_and_visual_rejected) ... ok\ntest_exactly_five_shots (__main__.ContentRulesTests.test_exactly_five_shots) ... ok\ntest_html_rejected_across_content_fields (__main__.ContentRulesTests.test_html_rejected_across_content_fields) ... ok\ntest_missing_and_unknown_shot_fields (__main__.ContentRulesTests.test_missing_and_unknown_shot_fields) ... ok\ntest_missing_and_unknown_top_level_fields (__main__.ContentRulesTests.test_missing_and_unknown_top_level_fields) ... ok\ntest_related_rejects_self_missing_and_duplicate (__main__.ContentRulesTests.test_related_rejects_self_missing_and_duplicate) ... ok\ntest_slug_rejects_invalid_names_and_paths (__main__.ContentRulesTests.test_slug_rejects_invalid_names_and_paths) ... ok\ntest_valid_fifteen_second_fixture (__main__.ContentRulesTests.test_valid_fifteen_second_fixture) ... ok\ntest_detail_escapes_plain_text_in_copyable_summary (__main__.HtmlEscapeTests.test_detail_escapes_plain_text_in_copyable_summary) ... ok\ntest_escape_handles_text_and_attribute_delimiters (__main__.HtmlEscapeTests.test_escape_handles_text_and_attribute_delimiters) ... ok\ntest_valid_plain_text_cannot_break_card_attributes (__main__.HtmlEscapeTests.test_valid_plain_text_cannot_break_card_attributes) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.004s\n\nOK\n"
+    }
+  },
+  "worksheet_tests": {
+    "exit_code": 0,
+    "stdout": "✔ real product, visible feature and ending update their actual shots and exported text (1.3225ms)\n✔ all four sources keep exactly their five durations and fifteen seconds (1.0954ms)\n✔ blank optional feature preserves the source's neutral third shot (0.6989ms)\n✔ comparison uses both real names in the corresponding fair-condition shots (0.1913ms)\n✔ comparison feature is explicitly checked against both products, without an invented winner (0.1268ms)\n✔ missing required names produce clear field errors; variant is required only for comparison (0.079ms)\n✔ a new source-only comparison slug inherits the two-product workflow (0.1279ms)\n✔ overlong text is rejected, never shortened; exact limits remain intact (0.3253ms)\n✔ action must be a listed choice and multiline fields are rejected (0.0995ms)\n✔ markup-like input stays literal data in the sheet, including the complete exported text (0.14ms)\n✔ brief uses LF consistently and includes every visible shot and caption (0.2134ms)\n✔ invalid source timing fails rather than exporting an incorrect fifteen-second sheet (0.1446ms)\nℹ tests 12\nℹ suites 0\nℹ pass 12\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 9.1696\n",
+    "stderr": ""
+  },
+  "browser_verification": "Not performed: side-browser control is disabled; no desktop browser was operated.",
+  "practical_change": [
+    "首頁明確說明成果與手機拍攝方法，提供四個直接入口，移除搜尋與篩選。",
+    "填商品名稱、真實可見特徵與結尾行動，實際更新五格中的開場、細節與結尾。",
+    "比較範本需兩個名稱；*-comparison 命名可沿用共用流程。",
+    "可複製或下載當前拍攝單文字；範例與使用者資料明確標示。"
+  ]
+}

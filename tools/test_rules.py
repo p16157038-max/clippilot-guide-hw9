@@ -7,6 +7,7 @@ content so a changed guide cannot silently change the expected failure cases.
 import copy
 import importlib.util
 import unittest
+from html.parser import HTMLParser
 from pathlib import Path
 
 
@@ -132,12 +133,34 @@ class HtmlEscapeTests(unittest.TestCase):
         )
 
     def test_valid_plain_text_cannot_break_card_attributes(self):
+        class MarkupParser(HTMLParser):
+            def __init__(self):
+                super().__init__()
+                self.elements = []
+                self.text = []
+
+            def handle_starttag(self, tag, attrs):
+                self.elements.append((tag, dict(attrs)))
+
+            def handle_data(self, data):
+                self.text.append(data)
+
         docs = fixture()
-        docs[0]["title"] = '商品 " onmouseover="alert(1) & 春日'
+        malicious = '商品 " onmouseover="alert(1) & 春日'
+        docs[0]["title"] = malicious
         build.validate(docs)
         output = build.card(docs[0], 1)
-        self.assertIn('data-title="商品 &quot; onmouseover=&quot;alert(1) &amp; 春日"', output)
-        self.assertNotIn('data-title="商品 " onmouseover="', output)
+        parser = MarkupParser()
+        parser.feed(output)
+        self.assertIn(malicious, "".join(parser.text))
+        self.assertIn('商品 &quot; onmouseover=&quot;alert(1) &amp; 春日', output)
+        self.assertFalse(any(tag in ("script", "iframe", "object", "embed")
+                             for tag, _ in parser.elements))
+        self.assertFalse(any(name.lower().startswith("on")
+                             for _, attrs in parser.elements for name in attrs))
+        links = [attrs for tag, attrs in parser.elements if tag == "a"]
+        self.assertEqual(len(links), 1)
+        self.assertEqual(links[0]["href"], "guides/alpha/index.html")
 
     def test_detail_escapes_plain_text_in_copyable_summary(self):
         docs = fixture()

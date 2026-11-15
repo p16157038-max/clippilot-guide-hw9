@@ -83,7 +83,7 @@ def check_scripts(parser):
 def check_guide(parser, doc):
     form = parser.by_id('worksheet-form')
     assert form['tag'] == 'form', 'Worksheet entry must be a form'
-    comparison = doc['slug'] == 'feature-comparison'
+    comparison = doc['slug'].endswith('-comparison')
     assert form['attrs'].get('data-mode') == ('comparison' if comparison else 'single')
     data = parser.by_id('guide-data')
     assert data['tag'] == 'script' and data['attrs'].get('type') == 'application/json'

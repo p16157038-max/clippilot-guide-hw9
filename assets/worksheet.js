@@ -68,14 +68,16 @@
     if (isComparison(guide)) {
       title = `${name} × ${variant}｜15 秒比較拍攝單`;
       shots[0].visual = `將「${name}」與「${variant}」並排放好，在相同背景、光線與距離下拍清楚兩款外觀。`;
-      shots[0].caption = `${name}／另一款`;
+      const pairCaption = `${name}／${variant}`;
+      shots[0].caption = count(pairCaption) <= 18 ? pairCaption : "兩款實拍比較";
       shots[1].visual = `固定鏡位拍「${name}」的外觀與可見細節，保持與下一格相同的光線、距離及使用條件。`;
       shots[1].caption = name;
       shots[2].visual = `以相同鏡位、光線與距離拍「${variant}」，只呈現可實拍的差異，不加入優劣評語。`;
       shots[2].caption = variant;
       if (feature) {
         shots[2].visual += ` 差異「${feature}」須先核對，再分別實拍兩款對應位置，不能只替其中一款加效果。`;
-        shots[2].caption = feature;
+        shots[3].visual = `將「${name}」與「${variant}」在相同場景與條件下使用，實拍已核對的差異「${feature}」，不加入未確認的優劣評語。`;
+        shots[3].caption = feature;
       }
       shots[4].visual = `讓「${name}」與「${variant}」回到同條件並排畫面，搭配店名與「${action}」；聯絡方式確認後再放上畫面。`;
     } else {

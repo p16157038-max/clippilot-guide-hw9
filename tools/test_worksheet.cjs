@@ -45,6 +45,7 @@ test("blank optional feature preserves the source's neutral third shot", () => {
 test("comparison uses both real names in the corresponding fair-condition shots", () => {
   const result = createSheet(comparison, { name: "白色馬克杯", variant: "綠色馬克杯", feature: "", action: "私訊詢問商品" });
   assert.match(result.shots[0].visual, /白色馬克杯.*綠色馬克杯/);
+  assert.equal(result.shots[0].caption, "白色馬克杯／綠色馬克杯");
   assert.match(result.shots[1].visual, /白色馬克杯/);
   assert.equal(result.shots[1].caption, "白色馬克杯");
   assert.match(result.shots[2].visual, /綠色馬克杯/);
@@ -57,7 +58,9 @@ test("comparison uses both real names in the corresponding fair-condition shots"
 test("comparison feature is explicitly checked against both products, without an invented winner", () => {
   const result = createSheet(comparison, { name: "白色馬克杯", variant: "綠色馬克杯", feature: "兩款都有提把" });
   assert.match(result.shots[2].visual, /須先核對.*分別實拍兩款/);
-  assert.equal(result.shots[2].caption, "兩款都有提把");
+  assert.equal(result.shots[2].caption, "綠色馬克杯");
+  assert.equal(result.shots[3].caption, "兩款都有提把");
+  assert.match(result.shots[3].visual, /兩款都有提把/);
 });
 
 test("missing required names produce clear field errors; variant is required only for comparison", () => {
@@ -83,7 +86,9 @@ test("overlong text is rejected, never shortened; exact limits remain intact", (
   }
   const result = createSheet(comparison, { name: "字".repeat(12), variant: "款".repeat(12), feature: "特".repeat(18) });
   assert.equal(result.shots[1].caption, "字".repeat(12));
-  assert.equal(result.shots[2].caption, "特".repeat(18));
+  assert.equal(result.shots[0].caption, "兩款實拍比較");
+  assert.equal(result.shots[2].caption, "款".repeat(12));
+  assert.equal(result.shots[3].caption, "特".repeat(18));
   assert.ok(result.shots.every((shot) => Array.from(shot.caption).length <= 18));
 });
 

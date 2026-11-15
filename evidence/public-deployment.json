@@ -1,61 +1,69 @@
 {
-  "date": "2026-11-14",
+  "date": "2026-11-15",
+  "version": "1.1",
+  "commit": "e68a49a02ae83240f571e8c2202250e261c6e813",
   "url": "https://p16157038-max.github.io/clippilot-guide-hw9/",
   "anonymous_http_checks": [
     {
       "path": "index.html",
       "status": 200,
       "matches_local_after_newline_normalization": true,
-      "normalized_sha256": "ff3492bcdcde7985544988c3b1a44e74c317311216d55894234a5ca878acb2cc"
+      "normalized_sha256": "35c6b991eb358966bb8aa9bdbace9eb6be592b38a7f1316fab6d1e7743b417f4"
     },
     {
       "path": "guides/drink-launch/index.html",
       "status": 200,
       "matches_local_after_newline_normalization": true,
-      "normalized_sha256": "f07cc9b64e08cbdbe1df2964f5af8cc7d6eff745c6fd7f5efc0dc21aefc6e479"
+      "normalized_sha256": "4c71543b7005ee604edff7127d5d3f79763b265247a1fcb60305a2f7af529287"
     },
     {
       "path": "guides/product-reveal/index.html",
       "status": 200,
       "matches_local_after_newline_normalization": true,
-      "normalized_sha256": "ac363d30eaf5884909166bda5f46d243f14e64fe9079d3375198116ed089ae3b"
+      "normalized_sha256": "c98012fd1bd6cb1e50cae4c91202b0226f0f1b925620085fb6565acb868accbb"
     },
     {
       "path": "guides/daily-scenario/index.html",
       "status": 200,
       "matches_local_after_newline_normalization": true,
-      "normalized_sha256": "c9ec5df4ec723b825b8cdf8bb0d29b1a165e9768c4e19faecf4cdc7ba4ea751c"
+      "normalized_sha256": "c1ae0fea11d72573ac2687ef97073af76b3bcf4f922546f12380df630e321484"
     },
     {
       "path": "guides/feature-comparison/index.html",
       "status": 200,
       "matches_local_after_newline_normalization": true,
-      "normalized_sha256": "677139d0e8be1caea3755a493bec2da48a332f4d36fe2d33f282dafb9a86af0f"
+      "normalized_sha256": "9ed549be769d5707a9620eaa06229861d238e70d3287b99bcf851312f43e66dc"
     },
     {
       "path": "maintenance/index.html",
       "status": 200,
       "matches_local_after_newline_normalization": true,
-      "normalized_sha256": "2a88a730eb2207f332bc9aa4acf76f287aa7ed3cb03703078308746ea5c5218f"
+      "normalized_sha256": "58115ad797461fd1d78b624f6c5e696d85c3d2b3bf984aa90b8cea46bafb488b"
     },
     {
       "path": "AGENTS.md",
       "status": 200,
       "matches_local_after_newline_normalization": true,
-      "normalized_sha256": "9702a23102c24b27242eb09464f5eb11ecc4864122e9019e5dd1b82f063e63ea"
+      "normalized_sha256": "697b3f6214ad600166fa6e3f0290bf2ada0a468f1c50c61b44b56d9148928a09"
     },
     {
       "path": "assets/site.css",
       "status": 200,
       "matches_local_after_newline_normalization": true,
-      "normalized_sha256": "1991b5658f765371be0b9984e899e52f892c0c6e4e5cb5ab28e10f5788cb27b7"
+      "normalized_sha256": "e2c5ebc38a835226fc647544d0592cc99f9fdfbe901ddf1cf4219b8433b699eb"
     },
     {
       "path": "assets/site.js",
       "status": 200,
       "matches_local_after_newline_normalization": true,
-      "normalized_sha256": "8403f7360265917ca80bf4734ff6978d969538d25833f566769c493ebf6ca683"
+      "normalized_sha256": "b2aa6e6c65664bd8865911657f3e87770baf5996f7d9e197825d94f516d5b536"
+    },
+    {
+      "path": "assets/worksheet.js",
+      "status": 200,
+      "matches_local_after_newline_normalization": true,
+      "normalized_sha256": "90645d6e8c71ad53df8341d7801beb205c224488a6bbbe5eb9d2ec2a8622ed13"
     }
   ],
-  "note": "HTTP checks only; not a browser interaction test. CRLF/LF differences normalized to match Git line-ending handling."
+  "note": "Anonymous HTTP checks, not browser interactions; line endings normalized."
 }

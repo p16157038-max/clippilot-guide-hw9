@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "date": "2026-11-15",
-  "status": "local_checks_passed",
+  "status": "published_http_verified",
   "user_feedback": "使用者指出用途、開始位置及取得成果不清楚，要求簡單、實用、完整的操作流程。",
   "historical_extension": {
     "date": "2026-11-14",
@@ -37,5 +37,7 @@
     "填商品名稱、真實可見特徵與結尾行動，實際更新五格中的開場、細節與結尾。",
     "比較範本需兩個名稱；*-comparison 命名可沿用共用流程。",
     "可複製或下載當前拍攝單文字；範例與使用者資料明確標示。"
-  ]
+  ],
+  "public_commit": "e68a49a02ae83240f571e8c2202250e261c6e813",
+  "public_targets": 10
 }

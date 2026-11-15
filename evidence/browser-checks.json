@@ -1,0 +1,329 @@
+{
+  "date": "2026-11-15",
+  "performed_at": "2026-11-15T10:52:30.858Z",
+  "timezone": "Asia/Taipei",
+  "version": "1.1",
+  "method": "Actual UI operations in an isolated headless Chrome profile, no user browser profile or visible window.",
+  "environment": {
+    "os": "Windows",
+    "browser": "150.0.7871.187",
+    "desktop_viewport": {
+      "width": 1440,
+      "height": 1100
+    },
+    "mobile_emulation": {
+      "width": 390,
+      "height": 844,
+      "is_physical_phone": false
+    }
+  },
+  "cases": [
+    {
+      "id": "C00",
+      "name": "首頁目的、三步說明與四個入口",
+      "status": "passed",
+      "input": {},
+      "screenshots": [
+        "00_首頁與三步使用流程.png"
+      ],
+      "observations": {
+        "goals": [
+          "介紹商品外觀 →",
+          "示範商品怎麼用 →",
+          "比較兩種款式 →",
+          "介紹飲品新品 →"
+        ],
+        "steps": 3,
+        "anonymous_access": true
+      },
+      "url": "https://p16157038-max.github.io/clippilot-guide-hw9/"
+    },
+    {
+      "id": "C01",
+      "name": "商品外觀拍攝單",
+      "status": "passed",
+      "input": {
+        "name": "帆布托特包",
+        "feature": "內袋可收納鑰匙",
+        "action": "到店看看實品"
+      },
+      "screenshots": [
+        "01_商品外觀_資料輸入.png",
+        "01_商品外觀_五鏡結果.png"
+      ],
+      "observations": {
+        "title": "帆布托特包｜15 秒拍攝單",
+        "times": [
+          "00–02 秒",
+          "02–05 秒",
+          "05–08 秒",
+          "08–12 秒",
+          "12–15 秒"
+        ],
+        "captions": [
+          "先看帆布托特包",
+          "打開這份日常",
+          "內袋可收納鑰匙",
+          "放進你的日常",
+          "到店看看實品"
+        ],
+        "feature_in_third_shot": true
+      },
+      "url": "https://p16157038-max.github.io/clippilot-guide-hw9/guides/product-reveal/index.html"
+    },
+    {
+      "id": "C02",
+      "name": "實際使用情境拍攝單",
+      "status": "passed",
+      "input": {
+        "name": "隨行保溫杯",
+        "feature": "單手按壓開蓋",
+        "action": "查看商品資訊"
+      },
+      "screenshots": [
+        "02_使用情境_資料輸入.png",
+        "02_使用情境_五鏡結果.png"
+      ],
+      "observations": {
+        "title": "隨行保溫杯｜15 秒拍攝單",
+        "times": [
+          "00–02 秒",
+          "02–05 秒",
+          "05–09 秒",
+          "09–12 秒",
+          "12–15 秒"
+        ],
+        "captions": [
+          "先看隨行保溫杯",
+          "從這件小物開始",
+          "單手按壓開蓋",
+          "日常就這樣多一點順手",
+          "查看商品資訊"
+        ],
+        "feature_in_third_shot": true
+      },
+      "url": "https://p16157038-max.github.io/clippilot-guide-hw9/guides/daily-scenario/index.html"
+    },
+    {
+      "id": "C03",
+      "name": "兩款商品比較拍攝單",
+      "status": "passed",
+      "input": {
+        "name": "奶油白款",
+        "variant": "森林綠款",
+        "feature": "白款素面，綠款條紋",
+        "action": "私訊詢問商品"
+      },
+      "screenshots": [
+        "03_兩款比較_資料輸入.png",
+        "03_兩款比較_五鏡結果.png"
+      ],
+      "observations": {
+        "title": "奶油白款 × 森林綠款｜15 秒比較拍攝單",
+        "times": [
+          "00–02 秒",
+          "02–05 秒",
+          "05–08 秒",
+          "08–12 秒",
+          "12–15 秒"
+        ],
+        "captions": [
+          "奶油白款／森林綠款",
+          "奶油白款",
+          "森林綠款",
+          "白款素面，綠款條紋",
+          "私訊詢問商品"
+        ],
+        "feature_in_third_shot": true,
+        "both_variant_names_preserved_in_captions": true
+      },
+      "url": "https://p16157038-max.github.io/clippilot-guide-hw9/guides/feature-comparison/index.html"
+    },
+    {
+      "id": "C04",
+      "name": "飲品新品拍攝單",
+      "status": "passed",
+      "input": {
+        "name": "檸檬氣泡飲",
+        "feature": "透明杯身看得見氣泡",
+        "action": "到店看看實品"
+      },
+      "screenshots": [
+        "04_飲品新品_資料輸入.png",
+        "04_飲品新品_五鏡結果.png"
+      ],
+      "observations": {
+        "title": "檸檬氣泡飲｜15 秒拍攝單",
+        "times": [
+          "00–02 秒",
+          "02–05 秒",
+          "05–08 秒",
+          "08–12 秒",
+          "12–15 秒"
+        ],
+        "captions": [
+          "先看檸檬氣泡飲",
+          "先看杯中的樣子",
+          "透明杯身看得見氣泡",
+          "把這杯帶進日常",
+          "到店看看實品"
+        ],
+        "feature_in_third_shot": true
+      },
+      "url": "https://p16157038-max.github.io/clippilot-guide-hw9/guides/drink-launch/index.html"
+    },
+    {
+      "id": "C05",
+      "name": "更換資料後同步更新結果",
+      "status": "passed",
+      "input": {
+        "name": "帆布收納袋",
+        "feature": "抽繩開口",
+        "action": "私訊詢問商品"
+      },
+      "screenshots": [
+        "05_更換商品後的結果.png"
+      ],
+      "observations": {
+        "dirty_fields_require_update": true,
+        "old_product_removed": true,
+        "title": "帆布收納袋｜15 秒拍攝單",
+        "feature": "抽繩開口",
+        "ending": "私訊詢問商品"
+      },
+      "url": "https://p16157038-max.github.io/clippilot-guide-hw9/guides/product-reveal/index.html#worksheet"
+    },
+    {
+      "id": "C06",
+      "name": "必填欄位錯誤提示",
+      "status": "passed",
+      "input": {
+        "blank_name": true,
+        "blank_second_variant": true
+      },
+      "screenshots": [
+        "06_商品名稱必填提示.png",
+        "06_第二款名稱必填提示.png"
+      ],
+      "observations": {
+        "name_error": "請填寫你要拍攝的商品名稱。",
+        "second_variant_error": "比較兩款商品時，請填寫第二款名稱。",
+        "previous_valid_sheet_not_replaced": true
+      },
+      "url": "https://p16157038-max.github.io/clippilot-guide-hw9/guides/feature-comparison/index.html#worksheet"
+    },
+    {
+      "id": "C07",
+      "name": "特徵選填可留白",
+      "status": "passed",
+      "input": {
+        "name": "帆布托特包",
+        "feature": "",
+        "action": "查看商品資訊"
+      },
+      "screenshots": [
+        "07_特徵留白仍可完成.png"
+      ],
+      "observations": {
+        "updated_successfully": true,
+        "neutral_third_shot_preserved": true,
+        "third_caption": "細節近一點看"
+      },
+      "url": "https://p16157038-max.github.io/clippilot-guide-hw9/guides/product-reveal/index.html#worksheet"
+    },
+    {
+      "id": "C08",
+      "name": "真實複製與下載文字檔",
+      "status": "passed",
+      "input": {
+        "name": "帆布托特包",
+        "feature": "內袋可收納鑰匙",
+        "action": "到店看看實品"
+      },
+      "screenshots": [
+        "08_複製成功與完整文字.png",
+        "08_實際下載文字檔.png"
+      ],
+      "observations": {
+        "clipboard_matches_display": true,
+        "clipboard_comparison": "Text identical after CRLF/LF normalization required by the Windows clipboard; no content removed.",
+        "clipboard_exact_bytes_match": false,
+        "download_event_observed": true,
+        "suggested_filename": "product-reveal-shooting-sheet.txt",
+        "download_path": "下載成果/product-reveal-shooting-sheet.txt",
+        "file_matches_display": true,
+        "download_bytes": 1435
+      },
+      "url": "https://p16157038-max.github.io/clippilot-guide-hw9/guides/product-reveal/index.html#worksheet"
+    },
+    {
+      "id": "C09",
+      "name": "更新拍攝單時重設交付清單",
+      "status": "passed",
+      "input": {
+        "name": "帆布托特包",
+        "feature": "內袋可收納鑰匙",
+        "action": "到店看看實品"
+      },
+      "screenshots": [
+        "09_交付清單勾選.png",
+        "09_更新後清單重設.png"
+      ],
+      "observations": {
+        "checked_before": 2,
+        "checked_after_successful_update": 0
+      },
+      "url": "https://p16157038-max.github.io/clippilot-guide-hw9/guides/product-reveal/index.html#worksheet"
+    },
+    {
+      "id": "C10",
+      "name": "390px 手機寬度操作與閱讀",
+      "status": "passed",
+      "input": {
+        "name": "帆布托特包",
+        "feature": "內袋可收納鑰匙",
+        "action": "到店看看實品"
+      },
+      "screenshots": [
+        "10_手機寬度資料輸入.png"
+      ],
+      "observations": {
+        "viewport_width": 390,
+        "physical_phone": false,
+        "whole_page_horizontal_overflow": false,
+        "personalization_succeeded": true,
+        "result_width": 350,
+        "title": "帆布托特包｜15 秒拍攝單",
+        "screenshot_selection": "Only the clean input capture is included; long-result screenshot omitted due to a browser capture painting artifact. Geometry and personalization assertions passed in the live DOM."
+      },
+      "url": "https://p16157038-max.github.io/clippilot-guide-hw9/guides/product-reveal/index.html#worksheet"
+    },
+    {
+      "id": "C11",
+      "name": "輸入字數上限",
+      "status": "passed",
+      "input": {
+        "name_attempt": "一二三四五六七八九十一二三",
+        "feature_attempt": "一二三四五六七八九十一二三四五六七八九"
+      },
+      "screenshots": [
+        "11_輸入字數限制.png"
+      ],
+      "observations": {
+        "name_received": "一二三四五六七八九十一二",
+        "name_length": 12,
+        "feature_received": "一二三四五六七八九十一二三四五六七八",
+        "feature_length": 18,
+        "native_maxlength_prevents_extra_input": true
+      },
+      "url": "https://p16157038-max.github.io/clippilot-guide-hw9/guides/product-reveal/index.html#worksheet"
+    }
+  ],
+  "javascript_errors": [],
+  "summary": {
+    "total": 12,
+    "passed": 12,
+    "failed": 0
+  },
+  "tested_runtime_commit": "ab0d9c91a30ce53b3faedd8b9a97ca5f3b8c228b"
+}
